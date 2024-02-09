@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(180deg, rgba(255,0,0,0.24413515406162467) 0%, rgba(36,0,0,0) 29%, rgba(144,0,0,0) 66%, rgba(255,0,0,0.2413340336134454) 100%);
+}
+
+header {
+    color: #ffffff;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.logo img{
+    height: 100px;
+}
+
+.encabezado-derecha{
+    margin-right: 60px;
+    align-items: center;
+    display: flex;
+}
+
+.encabezado-derecha a {
+    color: #000000;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+header {
+    transition: background-color 0.3s, height 0.3s;
+}
+
+header:hover {
+    background-color: rgba(255, 255, 255, 0.288);
+}
+
+.carrito {
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.carrito{
+    font-size: 30px;
+}
+
+
+
+
+header a {
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+header a::before,
+header a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: rgba(255,0,0,0.24413515406162467);
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+header a::before {
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0); 
+}
+
+header a::after {
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+}
+
+header a:hover::before,
+header a:hover::after {
+    transform: scaleX(1);
+}
+
+header a:hover {
+    color: rgb(0, 0, 0);
+}
+
+
+.contenedor-imagenes {
+    margin-top: 200px;
+    height: 400px;
+}
+
+.imagenes{
+    background-image: url(/img/brand.png);
+    width: auto;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 1s ease-in-out; 
+
+}
+
+
+
+.sobre-contenedor-valores{
+    text-align: center;
+    margin-top: 350px;
+
+}
+
+.contenedor-valores{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px; 
+    justify-items: center;
+}
+
+@media (max-width: 660px)  {
+    .contenedor-valores{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+
+.valores{
+    box-shadow: rgb(230, 227, 227) 1px 1px 10px 10px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.342);
+    text-align: center;
+    padding: 10px 40px 10px 40px;
+    border-radius: 40px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.valores:hover{
+    transform: scale(1.02);
+    background: linear-gradient(180deg, rgba(2,0,36,0) 65%, rgba(255,0,0,0.3029586834733894) 100%);
+}
+
+.valores h1{
+    font: bold;
+    color: #F91E33;
+}
+
+.valores p{
+    color: #1d1d1d;
+}
+
+
+.branding_container{
+    margin-top: 600px;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-image: url(/img/branding.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+
+}
+
+.branding{
+    background-image: url(img/brand.png);
+}
+
+footer {
+    color: black;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 500px;
+}
+
+.redes-sociales a {
+    color: black;
+    margin: 0 10px;
+    font-size: 40PX;
+    text-decoration: none;
+}

@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background: linear-gradient(180deg, rgba(255,0,0,0.24413515406162467) 0%, rgba(36,0,0,0) 29%, rgba(144,0,0,0) 66%, rgba(255,0,0,0.2413340336134454) 100%);
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.288);
+    color: #ffffff;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    align-items: center;
+    display: flex;
+    margin-left: 20px;
+    font-size: 30px;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+.logo a{
+    text-decoration: none;
+    color: #000000;
+    transition:color 0.2s ease-in-out;
+
+}
+
+.logo:hover{
+   transform: scale(1.5);
+}
+
+.logo a:hover{
+    color: #ff0000;
+}
+
+.encabezado-derecha{
+    margin-right: 60px;
+    align-items: center;
+    display: flex;
+}
+
+.encabezado-derecha a {
+    color: #000000;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+
+
+.detalle-producto {
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.281);
+    margin-top: 300px;
+    height: 500px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #ffeeee;
+}
+
+.detalle-imagen {
+    width: 900px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.detalle-info {
+    flex-grow: 1;
+}
+
+.detalle-info h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.detalle-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: rgb(70, 68, 68);
+}
+
+.boton-comprar {
+    width: 300px;
+    height: 40px;
+    background-color: #fd9696;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 270px;
+}
+
+.boton-comprar:hover {
+    background-color: #ffc3c3;
+}
+
+footer {
+    color: black;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 500px;
+}
+
+.redes-sociales a {
+    color: black;
+    margin: 0 10px;
+    font-size: 40PX;
+    text-decoration: none;
+}
